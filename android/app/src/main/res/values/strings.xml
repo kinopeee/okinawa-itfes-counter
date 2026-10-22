@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">沖縄ビジネスITフェス受付カウンター</string>
+    <string name="event_name">沖縄ビジネスITフェス</string>
+    <string name="counter_title">受付カウンター</string>
+    <string name="visitor_label">来場者数</string>
+    <string name="visitor_count">%1$d人</string>
+    <string name="capacity_label">定員 %1$d席に対する割合</string>
+    <string name="percentage">%1$d%%</string>
+    <string name="over_capacity">定員オーバー</string>
+    <string name="increment">来場者+1</string>
+    <string name="reset">リセット</string>
+</resources>
