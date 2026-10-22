@@ -1,0 +1,486 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A6C8BA5D12EEAA898A2AD99 /* VisitorCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F7A07CEC72B9B11FCB4358 /* VisitorCounter.swift */; };
+		2AD4408AAB0D7C17F795CBEF /* ReceptionCounterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0EDDE77C3797EF9721E2C6 /* ReceptionCounterApp.swift */; };
+		52BEEDCACFF99A0BD7A40BFA /* VisitorCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F7A07CEC72B9B11FCB4358 /* VisitorCounter.swift */; };
+		6536BAF3C72B400AB6627DD0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9453E49AE9840F48A35606B /* ContentView.swift */; };
+		AB5048D8153C51713A7FD65D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9453E49AE9840F48A35606B /* ContentView.swift */; };
+		BD77CC5251CAEDF19368DFA4 /* ReceptionCounterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0EDDE77C3797EF9721E2C6 /* ReceptionCounterApp.swift */; };
+		F394CBC61B0483EBE56EC31A /* VisitorCounterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F26B636ED5A954D86302E95 /* VisitorCounterTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5F4A6E7C57C1E86A0D4CD1F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40A7067AB3405EEC3114AAB1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 986AF7A32602FDA812920DD6;
+			remoteInfo = "ReceptionCounter-macOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		14A05221C203201F74BE3D90 /* ReceptionCounter-macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ReceptionCounter-macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F07F81FC08109EED152A291 /* ReceptionCounterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReceptionCounterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B0EDDE77C3797EF9721E2C6 /* ReceptionCounterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceptionCounterApp.swift; sourceTree = "<group>"; };
+		6C0DD9A6D14D48F549A84ED9 /* ReceptionCounter-iOS.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = "ReceptionCounter-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F26B636ED5A954D86302E95 /* VisitorCounterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitorCounterTests.swift; sourceTree = "<group>"; };
+		B9453E49AE9840F48A35606B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E2F7A07CEC72B9B11FCB4358 /* VisitorCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitorCounter.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0EFF863DB7E32B43BBC527E0 = {
+			isa = PBXGroup;
+			children = (
+				53E34DE9B8B482ACB80579D0 /* Sources */,
+				438688BCCF6B2AC62E7B39FF /* Tests */,
+				6161267EE109B2D1F37F3216 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		438688BCCF6B2AC62E7B39FF /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				7F26B636ED5A954D86302E95 /* VisitorCounterTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		53E34DE9B8B482ACB80579D0 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				B9453E49AE9840F48A35606B /* ContentView.swift */,
+				4B0EDDE77C3797EF9721E2C6 /* ReceptionCounterApp.swift */,
+				E2F7A07CEC72B9B11FCB4358 /* VisitorCounter.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		6161267EE109B2D1F37F3216 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6C0DD9A6D14D48F549A84ED9 /* ReceptionCounter-iOS.app */,
+				14A05221C203201F74BE3D90 /* ReceptionCounter-macOS.app */,
+				3F07F81FC08109EED152A291 /* ReceptionCounterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		47EAE97D4EFB2EFA3CCE322E /* ReceptionCounterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF1361FD6BFA900278878FAC /* Build configuration list for PBXNativeTarget "ReceptionCounterTests" */;
+			buildPhases = (
+				343B9304A8CE082B575C6469 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD8E873970BC57A742A920C1 /* PBXTargetDependency */,
+			);
+			name = ReceptionCounterTests;
+			packageProductDependencies = (
+			);
+			productName = ReceptionCounterTests;
+			productReference = 3F07F81FC08109EED152A291 /* ReceptionCounterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		835EF90F370B28086C70F853 /* ReceptionCounter-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70F22503AE5E8486ECE11071 /* Build configuration list for PBXNativeTarget "ReceptionCounter-iOS" */;
+			buildPhases = (
+				9795579464B15703632A3D05 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ReceptionCounter-iOS";
+			packageProductDependencies = (
+			);
+			productName = "ReceptionCounter-iOS";
+			productReference = 6C0DD9A6D14D48F549A84ED9 /* ReceptionCounter-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		986AF7A32602FDA812920DD6 /* ReceptionCounter-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42DE7C313EA6D78A54D23004 /* Build configuration list for PBXNativeTarget "ReceptionCounter-macOS" */;
+			buildPhases = (
+				4C02129DB9DC6EEF244AE107 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ReceptionCounter-macOS";
+			packageProductDependencies = (
+			);
+			productName = "ReceptionCounter-macOS";
+			productReference = 14A05221C203201F74BE3D90 /* ReceptionCounter-macOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		40A7067AB3405EEC3114AAB1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					47EAE97D4EFB2EFA3CCE322E = {
+						ProvisioningStyle = Automatic;
+					};
+					835EF90F370B28086C70F853 = {
+						ProvisioningStyle = Automatic;
+					};
+					986AF7A32602FDA812920DD6 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A1DDAAFA472CE5E2C7934FDF /* Build configuration list for PBXProject "ReceptionCounter" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 0EFF863DB7E32B43BBC527E0;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 6161267EE109B2D1F37F3216 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				835EF90F370B28086C70F853 /* ReceptionCounter-iOS */,
+				986AF7A32602FDA812920DD6 /* ReceptionCounter-macOS */,
+				47EAE97D4EFB2EFA3CCE322E /* ReceptionCounterTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		343B9304A8CE082B575C6469 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F394CBC61B0483EBE56EC31A /* VisitorCounterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C02129DB9DC6EEF244AE107 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6536BAF3C72B400AB6627DD0 /* ContentView.swift in Sources */,
+				2AD4408AAB0D7C17F795CBEF /* ReceptionCounterApp.swift in Sources */,
+				1A6C8BA5D12EEAA898A2AD99 /* VisitorCounter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9795579464B15703632A3D05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB5048D8153C51713A7FD65D /* ContentView.swift in Sources */,
+				BD77CC5251CAEDF19368DFA4 /* ReceptionCounterApp.swift in Sources */,
+				52BEEDCACFF99A0BD7A40BFA /* VisitorCounter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FD8E873970BC57A742A920C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 986AF7A32602FDA812920DD6 /* ReceptionCounter-macOS */;
+			targetProxy = 5F4A6E7C57C1E86A0D4CD1F5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		22C984938231A98E937255BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_APP_SANDBOX = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.keyplanning.okinawaitfes.counter.macos;
+				PRODUCT_NAME = "沖縄ビジネスITフェス受付カウンター";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		26BE6EB8AE08A7FBC560E309 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "沖縄ビジネスITフェス受付カウンター";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_MODULE_NAME = ReceptionCounter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		3BF5630735A307A70C814BA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_APP_SANDBOX = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.keyplanning.okinawaitfes.counter.macos;
+				PRODUCT_NAME = "沖縄ビジネスITフェス受付カウンター";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		6DEC527E9AA08A5AF9E343B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.keyplanning.okinawaitfes.counter.ios;
+				PRODUCT_NAME = "沖縄ビジネスITフェス受付カウンター";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		8734FA3F5C090976A99868B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.keyplanning.okinawaitfes.counter.tests;
+				PRODUCT_MODULE_NAME = ReceptionCounterTests;
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/沖縄ビジネスITフェス受付カウンター.app/Contents/MacOS/沖縄ビジネスITフェス受付カウンター";
+			};
+			name = Debug;
+		};
+		B69EC6D46345D0BA62685978 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "沖縄ビジネスITフェス受付カウンター";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_MODULE_NAME = ReceptionCounter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		BA14E7A4039F83F0DF39257E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.keyplanning.okinawaitfes.counter.tests;
+				PRODUCT_MODULE_NAME = ReceptionCounterTests;
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/沖縄ビジネスITフェス受付カウンター.app/Contents/MacOS/沖縄ビジネスITフェス受付カウンター";
+			};
+			name = Release;
+		};
+		F0F3DB6E56C9A995CAA5DFA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.keyplanning.okinawaitfes.counter.ios;
+				PRODUCT_NAME = "沖縄ビジネスITフェス受付カウンター";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		42DE7C313EA6D78A54D23004 /* Build configuration list for PBXNativeTarget "ReceptionCounter-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BF5630735A307A70C814BA6 /* Debug */,
+				22C984938231A98E937255BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		70F22503AE5E8486ECE11071 /* Build configuration list for PBXNativeTarget "ReceptionCounter-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0F3DB6E56C9A995CAA5DFA3 /* Debug */,
+				6DEC527E9AA08A5AF9E343B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A1DDAAFA472CE5E2C7934FDF /* Build configuration list for PBXProject "ReceptionCounter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26BE6EB8AE08A7FBC560E309 /* Debug */,
+				B69EC6D46345D0BA62685978 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		FF1361FD6BFA900278878FAC /* Build configuration list for PBXNativeTarget "ReceptionCounterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8734FA3F5C090976A99868B7 /* Debug */,
+				BA14E7A4039F83F0DF39257E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 40A7067AB3405EEC3114AAB1 /* Project object */;
+}
