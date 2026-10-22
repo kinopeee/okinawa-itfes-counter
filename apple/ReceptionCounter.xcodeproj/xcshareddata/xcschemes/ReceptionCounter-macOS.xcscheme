@@ -16,7 +16,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "986AF7A32602FDA812920DD6"
-               BuildableName = "ReceptionCounter-macOS.app"
+               BuildableName = "沖縄ビジネスITフェス受付カウンター.app"
                BlueprintName = "ReceptionCounter-macOS"
                ReferencedContainer = "container:ReceptionCounter.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "986AF7A32602FDA812920DD6"
-            BuildableName = "ReceptionCounter-macOS.app"
+            BuildableName = "沖縄ビジネスITフェス受付カウンター.app"
             BlueprintName = "ReceptionCounter-macOS"
             ReferencedContainer = "container:ReceptionCounter.xcodeproj">
          </BuildableReference>
@@ -69,7 +69,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "986AF7A32602FDA812920DD6"
-            BuildableName = "ReceptionCounter-macOS.app"
+            BuildableName = "沖縄ビジネスITフェス受付カウンター.app"
             BlueprintName = "ReceptionCounter-macOS"
             ReferencedContainer = "container:ReceptionCounter.xcodeproj">
          </BuildableReference>
@@ -86,7 +86,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "986AF7A32602FDA812920DD6"
-            BuildableName = "ReceptionCounter-macOS.app"
+            BuildableName = "沖縄ビジネスITフェス受付カウンター.app"
             BlueprintName = "ReceptionCounter-macOS"
             ReferencedContainer = "container:ReceptionCounter.xcodeproj">
          </BuildableReference>

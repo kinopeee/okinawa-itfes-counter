@@ -27,12 +27,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		14A05221C203201F74BE3D90 /* ReceptionCounter-macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ReceptionCounter-macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F07F81FC08109EED152A291 /* ReceptionCounterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReceptionCounterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B0EDDE77C3797EF9721E2C6 /* ReceptionCounterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceptionCounterApp.swift; sourceTree = "<group>"; };
-		6C0DD9A6D14D48F549A84ED9 /* ReceptionCounter-iOS.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = "ReceptionCounter-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FE8BE91A9E0B26BB875DC29 /* 沖縄ビジネスITフェス受付カウンター.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "沖縄ビジネスITフェス受付カウンター.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F26B636ED5A954D86302E95 /* VisitorCounterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitorCounterTests.swift; sourceTree = "<group>"; };
 		B9453E49AE9840F48A35606B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D944C9B7994C50277E8C5578 /* 沖縄ビジネスITフェス受付カウンター.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = "沖縄ビジネスITフェス受付カウンター.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2F7A07CEC72B9B11FCB4358 /* VisitorCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitorCounter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -67,9 +67,9 @@
 		6161267EE109B2D1F37F3216 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6C0DD9A6D14D48F549A84ED9 /* ReceptionCounter-iOS.app */,
-				14A05221C203201F74BE3D90 /* ReceptionCounter-macOS.app */,
 				3F07F81FC08109EED152A291 /* ReceptionCounterTests.xctest */,
+				D944C9B7994C50277E8C5578 /* 沖縄ビジネスITフェス受付カウンター.app */,
+				4FE8BE91A9E0B26BB875DC29 /* 沖縄ビジネスITフェス受付カウンター.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -109,7 +109,7 @@
 			packageProductDependencies = (
 			);
 			productName = "ReceptionCounter-iOS";
-			productReference = 6C0DD9A6D14D48F549A84ED9 /* ReceptionCounter-iOS.app */;
+			productReference = D944C9B7994C50277E8C5578 /* 沖縄ビジネスITフェス受付カウンター.app */;
 			productType = "com.apple.product-type.application";
 		};
 		986AF7A32602FDA812920DD6 /* ReceptionCounter-macOS */ = {
@@ -126,7 +126,7 @@
 			packageProductDependencies = (
 			);
 			productName = "ReceptionCounter-macOS";
-			productReference = 14A05221C203201F74BE3D90 /* ReceptionCounter-macOS.app */;
+			productReference = 4FE8BE91A9E0B26BB875DC29 /* 沖縄ビジネスITフェス受付カウンター.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */

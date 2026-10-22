@@ -15,6 +15,7 @@ targets:
   ReceptionCounter-iOS:
     type: application
     platform: iOS
+    productName: 沖縄ビジネスITフェス受付カウンター
     sources: [Sources]
     settings:
       base:
@@ -26,6 +27,7 @@ targets:
   ReceptionCounter-macOS:
     type: application
     platform: macOS
+    productName: 沖縄ビジネスITフェス受付カウンター
     sources: [Sources]
     settings:
       base:
