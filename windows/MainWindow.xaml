@@ -1,0 +1,41 @@
+<Window x:Class="ReceptionCounter.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="沖縄ビジネスITフェス受付カウンター"
+        Width="720" Height="500" MinWidth="640" MinHeight="460"
+        WindowStartupLocation="CenterScreen"
+        Background="#F3F7FA" FontFamily="Yu Gothic UI" Foreground="#153047">
+    <Grid Margin="32">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <StackPanel>
+            <TextBlock Text="沖縄ビジネスITフェス受付カウンター" FontSize="25" FontWeight="Bold" />
+            <TextBlock Text="受付 / 定員50席" FontSize="16" Margin="0,8,0,20" Foreground="#506778" />
+        </StackPanel>
+        <Border Grid.Row="1" Background="White" CornerRadius="12" Padding="24">
+            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                <TextBlock Text="現在の来場者数・定員に対する割合" FontSize="16" HorizontalAlignment="Center" />
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,12,0,0">
+                    <TextBlock x:Name="CountDisplay" FontSize="48" FontWeight="Bold" AutomationProperties.AutomationId="CountDisplay" />
+                    <TextBlock x:Name="CapacityWarning" Text="定員オーバー" Foreground="#C62828" FontSize="20" FontWeight="Bold"
+                               Margin="16,0,0,0" VerticalAlignment="Center" Visibility="Collapsed" />
+                </StackPanel>
+            </StackPanel>
+        </Border>
+        <Grid Grid.Row="2" Margin="0,24,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="16" />
+                <ColumnDefinition Width="160" />
+            </Grid.ColumnDefinitions>
+            <Button Content="来場者+1" Height="64" FontSize="24" FontWeight="Bold"
+                    Background="#087F8C" Foreground="White" BorderThickness="0"
+                    Click="AddVisitor_Click" AutomationProperties.AutomationId="AddVisitorButton" />
+            <Button Grid.Column="2" Content="リセット" Height="64" FontSize="20"
+                    Click="Reset_Click" AutomationProperties.AutomationId="ResetButton" />
+        </Grid>
+    </Grid>
+</Window>
