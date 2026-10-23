@@ -19,6 +19,10 @@ adb install -r app/build/outputs/apk/debug/app-debug.apk
 adb shell am start -n jp.co.keyplanning.okinawaitfes/.MainActivity
 ```
 
+### ビルドツールの依存固定
+
+AGP 8.9.2 が生成する `_internal-unified-test-platform-*` のホスト・テスト用設定だけに、既知の問題を修正した Guava 33.7.2、Protobuf 3.25.5、Netty 4.1.138、Kotlin stdlib 2.1.20 を適用しています。アプリの実行時依存や AndroidX Test APK の依存は変更しません。
+
 ## 設計上の既定値
 
 - カウンターは画面移動・画面回転では保持し、アプリのプロセス終了後は0に戻します。回答だけを永続化します。

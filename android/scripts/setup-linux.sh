@@ -18,7 +18,27 @@ if ! command -v javac >/dev/null 2>&1 || [[ "$(javac -version 2>&1 | sed -E 's/^
     fi
 fi
 
-JAVAC_PATH="$(readlink -f "$(command -v javac)")"
+find_javac17() {
+    local candidate version
+    for candidate in /usr/lib/jvm/*/bin/javac; do
+        [[ -x "$candidate" ]] || continue
+        version="$("$candidate" -version 2>&1 | sed -E 's/^javac ([0-9]+).*/\1/')"
+        if [[ "$version" == "17" ]]; then
+            readlink -f "$candidate"
+            return 0
+        fi
+    done
+    return 1
+}
+
+if command -v javac >/dev/null 2>&1 && [[ "$(javac -version 2>&1 | sed -E 's/^javac ([0-9]+).*/\1/')" == "17" ]]; then
+    JAVAC_PATH="$(readlink -f "$(command -v javac)")"
+else
+    JAVAC_PATH="$(find_javac17)" || {
+        printf '%s\n' 'JDK 17 was not found after installation.' >&2
+        exit 1
+    }
+fi
 JAVA_HOME="$(dirname "$(dirname "$JAVAC_PATH")")"
 export JAVA_HOME
 export ANDROID_HOME="$SDK_ROOT"
@@ -36,6 +56,7 @@ if [[ ! -x "$SDKMANAGER" ]]; then
     cp -a "$temporary_directory/cmdline-tools/." "$SDK_ROOT/cmdline-tools/latest/"
 fi
 
+"$SDKMANAGER" --sdk_root="$SDK_ROOT" --licenses < <(yes)
 "$SDKMANAGER" --sdk_root="$SDK_ROOT" --install \
     "platform-tools" \
     "platforms;android-35" \

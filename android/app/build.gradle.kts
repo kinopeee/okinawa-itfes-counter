@@ -24,6 +24,39 @@ android {
     lint { warningsAsErrors = true }
 }
 
+// AGP 8.9.2's UTP host/test configurations carry vulnerable transitive versions.
+// Keep these fixes away from application runtime and AndroidX test APK configurations.
+val utpSecurityConfigurations = setOf(
+    "_internal-unified-test-platform-android-device-provider-ddmlib",
+    "_internal-unified-test-platform-android-device-provider-gradle",
+    "_internal-unified-test-platform-android-driver-instrumentation",
+    "_internal-unified-test-platform-android-test-plugin",
+    "_internal-unified-test-platform-android-test-plugin-host-additional-test-output",
+    "_internal-unified-test-platform-android-test-plugin-host-apk-installer",
+    "_internal-unified-test-platform-android-test-plugin-host-coverage",
+    "_internal-unified-test-platform-android-test-plugin-host-device-info",
+    "_internal-unified-test-platform-android-test-plugin-host-emulator-control",
+    "_internal-unified-test-platform-android-test-plugin-host-logcat",
+    "_internal-unified-test-platform-android-test-plugin-host-retention",
+    "_internal-unified-test-platform-android-test-plugin-result-listener-gradle",
+    "_internal-unified-test-platform-core",
+    "_internal-unified-test-platform-launcher",
+)
+configurations.matching { it.name in utpSecurityConfigurations }.configureEach {
+    resolutionStrategy.eachDependency {
+        when {
+            requested.group == "com.google.guava" && requested.name == "guava" ->
+                useVersion("33.7.2-jre")
+            requested.group == "com.google.protobuf" && requested.name == "protobuf-java" ->
+                useVersion("3.25.5")
+            requested.group == "io.netty" ->
+                useVersion("4.1.138.Final")
+            requested.group == "org.jetbrains.kotlin" && requested.name == "kotlin-stdlib" ->
+                useVersion("2.1.20")
+        }
+    }
+}
+
 dependencies {
     //noinspection GradleDependency
     implementation(platform("androidx.compose:compose-bom:2025.04.01"))

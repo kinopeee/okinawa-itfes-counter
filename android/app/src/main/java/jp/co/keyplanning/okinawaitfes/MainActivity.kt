@@ -172,7 +172,6 @@ private fun ColumnScope.Counter(model: CounterViewModel) {
 private fun Survey(model: CounterViewModel) {
     Heading("来場者アンケート")
     Text("3問すべて必須・各1つ選択\nお名前や連絡先は収集しません。", fontSize = 14.sp, color = Muted)
-    if (model.saved) Notice("回答を保存しました")
     Question("01  満足度", Questions.satisfaction, model.satisfaction, !model.saving) { model.select(0, it) }
     Question("02  来場のきっかけ", Questions.discovery, model.discovery, !model.saving) { model.select(1, it) }
     Question("03  年代", Questions.age, model.age, !model.saving) { model.select(2, it) }
