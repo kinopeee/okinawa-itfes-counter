@@ -89,7 +89,7 @@
                                                Visibility="{Binding IsOverCapacity, Converter={StaticResource BooleanVisibility}}" />
                                 </StackPanel>
                             </Grid>
-                            <ProgressBar Value="{Binding Progress}" Maximum="50" Height="12"
+                            <ProgressBar Value="{Binding Progress, Mode=OneWay}" Maximum="50" Height="12"
                                          Foreground="{Binding StatusColor}" Background="#DCEBE7" BorderThickness="0"
                                          AutomationProperties.Name="定員50席に対する来場者数" />
                         </StackPanel>
